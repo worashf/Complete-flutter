@@ -31,13 +31,11 @@ class _UserTransactionsState extends State<UserTransactions> {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-        height: 300,
-        child: ListView(
-          children: [
-            NewTransaction(_addTransaction),
-            TransactionList(_userTransactions)
-          ],
-        ));
+    return Column(
+      children: [
+        NewTransaction(_addTransaction),
+        TransactionList(_userTransactions)
+      ],
+    );
   }
 }
